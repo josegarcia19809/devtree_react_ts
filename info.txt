@@ -2,12 +2,8 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Configurando React Router para múltiples rutas
+DevTree React - Navegando entre páginas con React Router
 
-
-07:47
-Navegando entre páginas con React Router
-04:01
 Creando el Layout Principal para Autenticacion (descarga materiales aqui)
 08:08
 Agregando Estilos a la Navegación
