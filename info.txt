@@ -2,9 +2,9 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Instalando Tailwindcss
+DevTree React - Configurando React Router para múltiples rutas
 
-Configurando React Router para múltiples rutas
+
 07:47
 Navegando entre páginas con React Router
 04:01
