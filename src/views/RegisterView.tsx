@@ -17,6 +17,7 @@ function RegisterView() {
         {defaultValues: initialValues}
     )
 
+    const password = watch("password");
     const handleRegister = () => {
 
     }
@@ -59,7 +60,11 @@ function RegisterView() {
                         className="bg-slate-100 border-none p-3 rounded-lg
                         placeholder-slate-400"
                         {...register("email", {
-                            required: "El email es obligatorio"
+                            required: "El email es obligatorio",
+                            pattern: {
+                                value: /\S+@\S+\.\S+/,
+                                message: "E-mail no válido",
+                            },
                         })}
                     />
                     {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
@@ -90,7 +95,11 @@ function RegisterView() {
                         className="bg-slate-100 border-none p-3 rounded-lg
                         placeholder-slate-400"
                         {...register("password", {
-                            required: "El password es obligatorio"
+                            required: "El password es obligatorio",
+                            minLength: {
+                                value: 8,
+                                message: "Password must have at least 8 characters"
+                            }
                         })}
                     />
                     {errors.password &&
@@ -107,7 +116,9 @@ function RegisterView() {
                         className="bg-slate-100 border-none p-3 rounded-lg
                         placeholder-slate-400"
                         {...register("password_confirmation", {
-                            required: "El repetir password es obligatorio"
+                            required: "El repetir password es obligatorio",
+                            validate: (value) => value === password ||
+                                'Los passwords no son iguales'
                         })}
                     />
                     {errors.password_confirmation && <ErrorMessage>
