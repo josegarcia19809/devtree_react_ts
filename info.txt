@@ -2,14 +2,8 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Añadiendo Reglas adicionales de Validación
+DevTree React - Leyendo los valores ingresados en el Formulario
 
-
-10:05
-
-05:18
-Leyendo los valores ingresados en el Formulario
-06:28
 Enviando la Petición para registrar usuario
 05:40
 ¿Qué son los CORS?
