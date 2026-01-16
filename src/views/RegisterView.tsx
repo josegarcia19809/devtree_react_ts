@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import {useForm} from "react-hook-form";
+import ErrorMessage from "../components/ErrorMessage.tsx";
 
 function RegisterView() {
     const {register, watch, handleSubmit, formState: {errors}} = useForm()
@@ -27,11 +28,13 @@ function RegisterView() {
                         type="text"
                         placeholder="Tu Nombre"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                        {...register("name",{
+                        {...register("name", {
                             required: "El nombre es obligatorio"
                         })}
                     />
+                    {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
                 </div>
+
                 <div className="grid grid-cols-1 space-y-3">
                     <label htmlFor="email"
                            className="text-2xl text-slate-500">E-mail</label>
@@ -40,11 +43,13 @@ function RegisterView() {
                         type="email"
                         placeholder="Email de Registro"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                        {...register("email",{
+                        {...register("email", {
                             required: "El email es obligatorio"
                         })}
                     />
+                    {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
                 </div>
+
                 <div className="grid grid-cols-1 space-y-3">
                     <label htmlFor="handle"
                            className="text-2xl text-slate-500">Handle</label>
@@ -53,7 +58,7 @@ function RegisterView() {
                         type="text"
                         placeholder="Nombre de usuario: sin espacios"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                        {...register("handle",{
+                        {...register("handle", {
                             required: "El handle es obligatorio"
                         })}
                     />
@@ -66,7 +71,7 @@ function RegisterView() {
                         type="password"
                         placeholder="Password de Registro"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                        {...register("password",{
+                        {...register("password", {
                             required: "El password es obligatorio"
                         })}
                     />
@@ -80,7 +85,7 @@ function RegisterView() {
                         type="password"
                         placeholder="Repetir Password"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
-                        {...register("password_confirmation",{
+                        {...register("password_confirmation", {
                             required: "El password es obligatorio"
                         })}
                     />

@@ -2,14 +2,8 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Añadiendo Eventos de React Hook Form y Validación
+DevTree React - Mostrando los Errores de validación en el Formulario
 
-
-04:42
-
-05:02
-Mostrando los Errores de validación en el Formulario
-06:43
 Creando un Componente para mostrar errores
 10:05
 Añadiendo Reglas adicionales de Validación
