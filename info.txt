@@ -2,12 +2,8 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Leyendo los valores ingresados en el Formulario
+DevTree React - Enviando la Petición para registrar usuario
 
-Enviando la Petición para registrar usuario
-05:40
-¿Qué son los CORS?
-03:49
 Habilitando CORS desde el backend
 11:06
 Añadiendo Variables de Entorno en el Cliente
