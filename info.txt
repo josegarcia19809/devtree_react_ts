@@ -2,9 +2,9 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Mostrando los Errores de validación en el Formulario
+DevTree React - Creando un Componente para mostrar errores
 
-Creando un Componente para mostrar errores
+
 10:05
 Añadiendo Reglas adicionales de Validación
 05:18

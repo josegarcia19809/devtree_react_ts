@@ -3,8 +3,20 @@ import {useForm} from "react-hook-form";
 import ErrorMessage from "../components/ErrorMessage.tsx";
 
 function RegisterView() {
-    const {register, watch, handleSubmit, formState: {errors}} = useForm()
-    console.log(errors)
+
+    const initialValues = {
+        name: "",
+        email: "",
+        handle: "",
+        password: "",
+        password_confirmation: "",
+
+    }
+
+    const {register, watch, handleSubmit, formState: {errors}} = useForm(
+        {defaultValues: initialValues}
+    )
+
     const handleRegister = () => {
 
     }
@@ -22,12 +34,14 @@ function RegisterView() {
                 className="bg-white px-5 py-20 rounded-lg space-y-10 mt-10"
             >
                 <div className="grid grid-cols-1 space-y-3">
-                    <label htmlFor="name" className="text-2xl text-slate-500">Nombre</label>
+                    <label htmlFor="name"
+                           className="text-2xl text-slate-500">Nombre</label>
                     <input
                         id="name"
                         type="text"
                         placeholder="Tu Nombre"
-                        className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                        className="bg-slate-100 border-none p-3 rounded-lg
+                        placeholder-slate-400"
                         {...register("name", {
                             required: "El nombre es obligatorio"
                         })}
@@ -42,7 +56,8 @@ function RegisterView() {
                         id="email"
                         type="email"
                         placeholder="Email de Registro"
-                        className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                        className="bg-slate-100 border-none p-3 rounded-lg
+                        placeholder-slate-400"
                         {...register("email", {
                             required: "El email es obligatorio"
                         })}
@@ -57,11 +72,13 @@ function RegisterView() {
                         id="handle"
                         type="text"
                         placeholder="Nombre de usuario: sin espacios"
-                        className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                        className="bg-slate-100 border-none p-3 rounded-lg
+                        placeholder-slate-400"
                         {...register("handle", {
                             required: "El handle es obligatorio"
                         })}
                     />
+                    {errors.handle && <ErrorMessage>{errors.handle.message}</ErrorMessage>}
                 </div>
                 <div className="grid grid-cols-1 space-y-3">
                     <label htmlFor="password"
@@ -70,11 +87,14 @@ function RegisterView() {
                         id="password"
                         type="password"
                         placeholder="Password de Registro"
-                        className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                        className="bg-slate-100 border-none p-3 rounded-lg
+                        placeholder-slate-400"
                         {...register("password", {
                             required: "El password es obligatorio"
                         })}
                     />
+                    {errors.password &&
+                        <ErrorMessage>{errors.password.message}</ErrorMessage>}
                 </div>
 
                 <div className="grid grid-cols-1 space-y-3">
@@ -84,16 +104,20 @@ function RegisterView() {
                         id="password_confirmation"
                         type="password"
                         placeholder="Repetir Password"
-                        className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
+                        className="bg-slate-100 border-none p-3 rounded-lg
+                        placeholder-slate-400"
                         {...register("password_confirmation", {
-                            required: "El password es obligatorio"
+                            required: "El repetir password es obligatorio"
                         })}
                     />
+                    {errors.password_confirmation && <ErrorMessage>
+                        {errors.password_confirmation.message}</ErrorMessage>}
                 </div>
 
                 <input
                     type="submit"
-                    className="bg-cyan-400 p-3 text-lg w-full uppercase text-slate-600 rounded-lg font-bold cursor-pointer"
+                    className="bg-cyan-400 p-3 text-lg w-full uppercase text-slate-600
+                    rounded-lg font-bold cursor-pointer"
                     value='Crear Cuenta'
                 />
             </form>
@@ -106,7 +130,8 @@ function RegisterView() {
                 </span>
                 <Link
                     to="/auth/login"
-                    className="text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
+                    className="text-indigo-400 hover:text-indigo-300 font-medium
+                    transition-colors"
                 >
                     Inicia sesión
                 </Link>
