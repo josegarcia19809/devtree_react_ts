@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {useForm} from "react-hook-form";
 import ErrorMessage from "../components/ErrorMessage.tsx";
 import type {RegisterForm} from "../types";
-import axios from "axios";
+import axios, {isAxiosError} from "axios";
 
 function RegisterView() {
 
@@ -22,9 +22,12 @@ function RegisterView() {
     const password = watch("password");
     const handleRegister = async (formData: RegisterForm) => {
         try {
-            const response = await axios.post("http://localhost:4000/auth/register", formData);
+            const {data} = await axios.post("http://localhost:4000/auth/register", formData);
+            console.log(data);
         } catch (err) {
-            console.log(err)
+            if(isAxiosError(err) && err.response) {
+                console.log(err.response.data.error);
+            }
         }
     }
 
