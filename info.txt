@@ -2,9 +2,9 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Creando un Cliente de Axios para realizar peticiones a la misma URL
+DevTree React - Añadiendo el Formulario y useForm
 
-Añadiendo el Formulario y useForm
+
 03:46
 Mostrando los mensajes desde el backend
 03:08
