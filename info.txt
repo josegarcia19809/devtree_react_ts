@@ -2,14 +2,9 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Enviando la Petición para registrar usuario
+DevTree React - Mostrando los mensajes del Backend en un Toast
 
-Habilitando CORS desde el backend
-11:06
-Añadiendo Variables de Entorno en el Cliente
-07:07
-Mostrando los mensajes del Backend en un Toast
-06:45
+
 Creando un Cliente de Axios para realizar peticiones a la misma URL
 03:28
 Añadiendo el Formulario y useForm
