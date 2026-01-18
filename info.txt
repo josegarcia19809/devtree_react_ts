@@ -2,11 +2,11 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Añadiendo el Formulario y useForm
+DevTree React - Mostrando los mensajes desde el backend
 
 
 03:46
-Mostrando los mensajes desde el backend
+
 03:08
 ¿Qué son los JSON Web Tokens (JWT)?
 03:12
