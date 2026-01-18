@@ -2,11 +2,8 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Mostrando los mensajes del Backend en un Toast
+DevTree React - Creando un Cliente de Axios para realizar peticiones a la misma URL
 
-
-Creando un Cliente de Axios para realizar peticiones a la misma URL
-03:28
 Añadiendo el Formulario y useForm
 03:46
 Mostrando los mensajes desde el backend
