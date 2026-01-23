@@ -19,13 +19,15 @@ function LoginView() {
     const handleLogin = async (formData: LoginForm) => {
         try {
             const {data} = await api.post(`/auth/login`, formData);
-            toast.success(data);
+            localStorage.setItem("AUTH_TOKEN", data);
+            
         } catch (err) {
             if (isAxiosError(err) && err.response) {
                 toast.error(err.response.data.error);
             }
         }
     }
+
     return (
         <>
             <div className="text-3xl font-bold text-white text-center mb-6">
