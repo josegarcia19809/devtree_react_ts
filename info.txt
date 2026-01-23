@@ -2,10 +2,10 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Creando el Layout de Administración
+DevTree React - Añadiendo una Navegación para Perfil y Links
 
 
-Añadiendo una Navegación para Perfil y Links
+
 06:38
 Creando el Formulario y Diferencias entre Autenticación y Autorización
 03:23
