@@ -2,17 +2,12 @@ Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
 
-DevTree React - Creando el Formulario y Diferencias entre Autenticación y Autorización
+http://localhost:5173/admin/profile
 
-Creando un Endpoint en el backend para obtener el usuario Autenticado
-05:49
-Identificando el Usuario autenticado por el JWT
-11:12
-Protegiendo el Endpoint de usuario para que solo usuarios autenticados accedan
-06:30
-¿Qué es React Query o TanStack Query?
-04:25
-Primeros pasos con React Query
+DevTree React - Primeros pasos con React Query
+
+
+
 04:13
 Utilizando el Hook useQuery
 05:49
