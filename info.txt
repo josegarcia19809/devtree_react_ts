@@ -4,12 +4,12 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Primeros pasos con React Query
+DevTree React - Utilizando el Hook useQuery
 
 
 
 04:13
-Utilizando el Hook useQuery
+
 05:49
 Propiedades de useQuery: data, isLoading, error, isError y más
 06:15
