@@ -4,13 +4,8 @@ import {isAxiosError} from "axios";
 
 
 export async function getUser() {
-    const token = localStorage.getItem("AUTH_TOKEN");
     try {
-        const {data} = await api("/user",{
-            headers: {
-                Authorization: `Bearer ${token}`,
-            }
-        })
+        const {data} = await api("/user")
         return data
 
     } catch (err) {
