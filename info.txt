@@ -4,17 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Propiedades de useQuery: data, isLoading, error, isError y más
+DevTree React - Enviando la petición con el JWT en React Query
 
-
-
-04:13
-
-05:49
-
-06:15
-Enviando la petición con el JWT en React Query
-03:38
 Añadiendo el JWT en un Interceptor de Axios
 04:18
 Proteger el Panel de Administración si un usuario no esta autenticado
