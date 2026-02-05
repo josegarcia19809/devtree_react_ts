@@ -4,11 +4,11 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Añadiendo el JWT en un Interceptor de Axios
+DevTree React - Proteger el Panel de Administración si un usuario no esta autenticado
 
 
 04:18
-Proteger el Panel de Administración si un usuario no esta autenticado
+
 03:38
 Obteniendo la información del usuario y mostrándola en el componente
 08:18
