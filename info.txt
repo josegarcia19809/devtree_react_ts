@@ -4,12 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Trabajando con el Formulario de Edición de Perfil
+DevTree React - Llenando el Formulario y reutilizando consultas con React Query
 
-
-08:02
-Llenando el Formulario y reutilizando consultas con React Query
-07:16
 Validación en el Formulario de Editar Perfil
 01:37
 Creando el Endpoint en el Backend para actualizar el perfil
