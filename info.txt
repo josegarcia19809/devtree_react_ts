@@ -4,9 +4,9 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Obteniendo la información del usuario y mostrándola en el componente
+DevTree React - Trabajando con el Formulario de Edición de Perfil
 
-Trabajando con el Formulario de Edición de Perfil
+
 08:02
 Llenando el Formulario y reutilizando consultas con React Query
 07:16
