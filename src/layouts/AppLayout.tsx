@@ -7,7 +7,9 @@ import {getUser} from "../api/DevTreeAPI.ts";
 export default function AppLayout() {
     const {data, isLoading, error, isError} = useQuery({
         queryFn: getUser,
-        queryKey: ['user']
+        queryKey: ['user'],
+        retry:1,
+        refetchOnWindowFocus: false,
     })
 
     return (

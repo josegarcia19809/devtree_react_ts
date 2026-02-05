@@ -10,7 +10,7 @@ export async function getUser() {
 
     } catch (err) {
         if (isAxiosError(err) && err.response) {
-            console.log(err.response.data.error)
+           throw new Error(err.response.data.error)
         }
     }
 }
