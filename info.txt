@@ -4,16 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Validación en el Formulario de Editar Perfil
+DevTree React - Escribiendo la Función en React que actualizará el Usuario
 
-
-01:37
-Creando el Endpoint en el Backend para actualizar el perfil
-05:32
-Permitir al usuario cambiar su handle
-07:11
-Escribiendo la Función en React que actualizará el Usuario
-06:14
 Actualizando la información y mostrando un Toast
 04:21
 Invalidar los datos cacheados y hacer un re-fetch con React Query
