@@ -4,12 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Actualizando la información y mostrando un Toast
+DevTree React - Invalidar los datos cacheados y hacer un re-fetch con React Query
 
-
-04:21
-Invalidar los datos cacheados y hacer un re-fetch con React Query
-02:28
 Primeros Pasos y Crear Cuenta en Cloudinary
 03:56
 Agregando las credenciales de Cloudinary en el backend
