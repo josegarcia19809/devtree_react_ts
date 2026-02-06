@@ -4,9 +4,9 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Escribiendo la Función en React que actualizará el Usuario
+DevTree React - Actualizando la información y mostrando un Toast
 
-Actualizando la información y mostrando un Toast
+
 04:21
 Invalidar los datos cacheados y hacer un re-fetch con React Query
 02:28

@@ -3,6 +3,7 @@ import ErrorMessage from "../components/ErrorMessage.tsx";
 import {useMutation, useQueryClient} from "@tanstack/react-query";
 import type {ProfileForm, User} from "../types";
 import {updateProfile} from "../api/DevTreeAPI.ts";
+import {toast} from "sonner";
 
 
 export default function ProfileView() {
@@ -19,11 +20,11 @@ export default function ProfileView() {
 
     const updateProfileMutation = useMutation({
         mutationFn: updateProfile,
-        onError: () => {
-            console.log("Hubo un error")
+        onError: (error) => {
+            toast.error(error.message);
         },
-        onSuccess: () => {
-            console.log("Hubo un success")
+        onSuccess: (data) => {
+            toast.success(data);
         }
     })
 
