@@ -4,19 +4,10 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Invalidar los datos cacheados y hacer un re-fetch con React Query
+DevTree React - Leyendo El archivo que se sube en React
 
-Primeros Pasos y Crear Cuenta en Cloudinary
-03:56
-Agregando las credenciales de Cloudinary en el backend
-02:45
-Leyendo Imágenes con Formidable
-08:02
-Subiendo imágenes en Cloudinary
-05:13
-Asignando la Imagen al Usuario Autenticado
-02:17
-Leyendo El archivo que se sube en React
+
+
 03:06
 Enviando la imagen con Axios y React Query
 07:00

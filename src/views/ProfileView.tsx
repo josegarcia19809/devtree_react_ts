@@ -4,6 +4,7 @@ import {useMutation, useQueryClient} from "@tanstack/react-query";
 import type {ProfileForm, User} from "../types";
 import {updateProfile} from "../api/DevTreeAPI.ts";
 import {toast} from "sonner";
+import * as React from "react";
 
 
 export default function ProfileView() {
@@ -33,6 +34,11 @@ export default function ProfileView() {
     const handleUserProfileForm = (formData: ProfileForm) => {
         updateProfileMutation.mutate(formData)
     }
+
+    const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
+        console.log(e.target.files);
+    }
+
     return (
         <form
             className="bg-white p-10 rounded-lg space-y-5"
@@ -80,8 +86,7 @@ export default function ProfileView() {
                     name="handle"
                     className="border-none bg-slate-100 rounded-lg p-2"
                     accept="image/*"
-                    onChange={() => {
-                    }}
+                    onChange={handleChange}
                 />
             </div>
 
