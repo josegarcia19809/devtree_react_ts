@@ -4,12 +4,12 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Leyendo El archivo que se sube en React
+DevTree React - Enviando la imagen con Axios y React Query
 
 
 
 03:06
-Enviando la imagen con Axios y React Query
+
 07:00
 Mostrando la Información del Perfil e Imagen
 05:38

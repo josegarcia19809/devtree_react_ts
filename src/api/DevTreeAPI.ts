@@ -1,4 +1,3 @@
-
 import api from "../config/axios.ts";
 import {isAxiosError} from "axios";
 import type {ProfileForm, User} from "../types";
@@ -11,7 +10,7 @@ export async function getUser() {
 
     } catch (err) {
         if (isAxiosError(err) && err.response) {
-           throw new Error(err.response.data.error)
+            throw new Error(err.response.data.error)
         }
     }
 }
@@ -21,6 +20,19 @@ export async function updateProfile(formData: ProfileForm) {
         const {data} = await api.patch<string>("/user", formData);
         return data
 
+    } catch (err) {
+        if (isAxiosError(err) && err.response) {
+            throw new Error(err.response.data.error)
+        }
+    }
+}
+
+export async function uploadImage(file: File) {
+    let formData = new FormData();
+    formData.append("file", file);
+    try {
+        const {data} = await api.post("/user/image", formData);
+        return data
     } catch (err) {
         if (isAxiosError(err) && err.response) {
             throw new Error(err.response.data.error)
