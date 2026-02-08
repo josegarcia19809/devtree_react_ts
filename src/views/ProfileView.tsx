@@ -33,10 +33,15 @@ export default function ProfileView() {
     const uploadImageMutation = useMutation({
         mutationFn: uploadImage,
         onError: (error) => {
-            console.log(error.message);
+            toast.error(error.message);
         },
         onSuccess: (data) => {
-            console.log(data);
+            queryClient.setQueryData(['user'], (prevData: User) => {
+                return {
+                    ...prevData,
+                    image: data
+                }
+            })
         }
     })
 
@@ -45,8 +50,8 @@ export default function ProfileView() {
         updateProfileMutation.mutate(formData)
     }
 
-    const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
-        if(e.target.files){
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (e.target.files) {
             uploadImageMutation.mutate(e.target.files[0])
         }
     }
