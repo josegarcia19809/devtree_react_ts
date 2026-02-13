@@ -4,7 +4,7 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Actualizaciones Optimistas con React Query
+DevTree React - Agregando el Array de Redes Sociales
 
 Agregando el Array de Redes Sociales
 04:52
