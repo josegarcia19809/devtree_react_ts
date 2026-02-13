@@ -4,12 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Agregando el Array de Redes Sociales
+DevTree React - Mostrando el Formulario de Redes Sociales
 
-Agregando el Array de Redes Sociales
-04:52
-Mostrando el Formulario de Redes Sociales
-05:56
 Añadiendo un Switch para Habilitar y Deshabilitar Redes Sociales
 03:17
 Identificando la red social en la que estamos escribiendo.
