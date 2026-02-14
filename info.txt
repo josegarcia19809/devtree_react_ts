@@ -4,11 +4,11 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Almacenando los enlaces en las redes sociales
+DevTree React - Habilitando / Deshabilitando enlaces de nuestro Tree
 
 
 03:42
-Habilitando / Deshabilitando enlaces de nuestro Tree
+
 05:53
 Detectando si una URL es válida antes de habilitarla
 05:03
