@@ -4,9 +4,9 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Identificando la red social en la que estamos escribiendo.
+DevTree React - Almacenando los enlaces en las redes sociales
 
-Almacenando los enlaces en las redes sociales
+
 03:42
 Habilitando / Deshabilitando enlaces de nuestro Tree
 05:53
