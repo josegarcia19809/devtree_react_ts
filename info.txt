@@ -4,12 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Añadiendo un Switch para Habilitar y Deshabilitar Redes Sociales
+DevTree React - Identificando la red social en la que estamos escribiendo.
 
-
-03:17
-Identificando la red social en la que estamos escribiendo.
-04:42
 Almacenando los enlaces en las redes sociales
 03:42
 Habilitando / Deshabilitando enlaces de nuestro Tree

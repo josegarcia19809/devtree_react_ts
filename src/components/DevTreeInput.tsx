@@ -1,12 +1,14 @@
 import type {DevTreeLink} from "../types";
 import {Switch} from "@headlessui/react";
 import {classNames} from "../utils";
+import * as React from "react";
 
 type DevTreeInputProps = {
     item: DevTreeLink
+    handleUrlChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-function DevTreeInput({item}: DevTreeInputProps) {
+function DevTreeInput({item, handleUrlChange}: DevTreeInputProps) {
     return (
         <>
             <div className="bg-white shadow-sm p-5 flex items-center gap-3">
@@ -15,7 +17,11 @@ function DevTreeInput({item}: DevTreeInputProps) {
                 </div>
                 <input
                     type="text"
-                    className="flex-1 border border-gray-100 rounded-lg"/>
+                    className="flex-1 border border-gray-100 rounded-lg"
+                    value={item.url}
+                    onChange={handleUrlChange}
+                    name={item.name}
+                />
                 <Switch
                     checked={item.enabled}
                     onChange={() => {
