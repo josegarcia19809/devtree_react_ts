@@ -4,12 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Almacenando los Enlaces en la base de datos
+DevTree React - Recuperando los enlaces de la base de datos y llenando el Formulario
 
-
-08:18
-Recuperando los enlaces de la base de datos y llenando el Formulario
-05:35
 Mostrando los enlaces habilitados en nuestro perfil
 05:40
 Añadiendo CSS a los Enlaces habilitados de nuestro perfil
