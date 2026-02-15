@@ -4,10 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Live Preview de Redes Sociales Habilitadas / Deshabilitadas
+DevTree React - cómo añadir el orden a nuestros enlaces de DevTree para añadir DragNDrop
 
-Veamos como añadir el orden a nuestros enlaces de DevTree para añadir DragNDrop
-04:47
 Añadiendo un Orden a cada Enlace
 06:30
 Actualizando el Orden al habilitar y deshabilitar redes sociales

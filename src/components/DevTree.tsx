@@ -67,10 +67,10 @@ function DevTree({data}: DevTreeProps) {
                             </p>
                             <div className="mt-20 flex flex-col gap-5">
                                 {enabledLinks.map((link: SocialNetwork) => (
-                                    <p><DevTreeLink
+                                    <DevTreeLink
                                         key={link.name}
                                         link={link}
-                                    /></p>
+                                    />
                                 ))}
 
                             </div>

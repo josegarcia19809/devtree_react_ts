@@ -45,12 +45,6 @@ const LinkTreeView = () => {
 
         setDevTreeLinks(updatedLinks);
 
-        queryClient.setQueryData(['user'], (prevData: User) => {
-            return {
-                ...prevData,
-                links: JSON.stringify(updatedLinks)
-            }
-        })
     }
 
     const handleEnableLink = (socialNetwork: string) => {
@@ -65,6 +59,16 @@ const LinkTreeView = () => {
             return link
         });
         setDevTreeLinks(updatedLinks);
+
+        const selectedSocialNetwork= updatedLinks.find(link => link.name === socialNetwork)
+        if (selectedSocialNetwork?.enabled) {
+            console.log(selectedSocialNetwork)
+        }
+        else{
+            console.log("des gha")
+        }
+
+        // Para almacenar en la base de datos
         queryClient.setQueryData(['user'], (prevData: User) => {
             return {
                 ...prevData,
