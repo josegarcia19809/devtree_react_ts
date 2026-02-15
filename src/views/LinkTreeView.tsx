@@ -2,6 +2,8 @@ import {useState} from "react";
 import {social} from "../data/social.ts";
 import DevTreeInput from "../components/DevTreeInput.tsx";
 import * as React from "react";
+import {isValidUrl} from "../utils";
+import {toast} from "sonner";
 
 
 const LinkTreeView = () => {
@@ -17,11 +19,16 @@ const LinkTreeView = () => {
     }
 
     const handleEnableLink = (socialNetwork: string) => {
-        const updatedLinks = devTreeLinks.map((link) => link.name === socialNetwork ? {
-            ...link,
-            enabled: !link.enabled,
-        } : link);
-        console.log(updatedLinks);
+        const updatedLinks = devTreeLinks.map((link) => {
+            if (link.name === socialNetwork) {
+                if (isValidUrl(link.url)) {
+                    return {...link, enabled: !link.enabled,}
+                } else {
+                    toast.error("URL no válida")
+                }
+            }
+            return link
+        });
         setDevTreeLinks(updatedLinks);
     }
 

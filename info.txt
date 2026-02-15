@@ -4,13 +4,13 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Habilitando / Deshabilitando enlaces de nuestro Tree
+DevTree React - Detectando si una URL es válida antes de habilitarla
 
 
 03:42
 
 05:53
-Detectando si una URL es válida antes de habilitarla
+
 05:03
 Añadiendo links a nuestro modelo de usuarios
 06:29
