@@ -4,12 +4,15 @@ import DevTreeInput from "../components/DevTreeInput.tsx";
 import * as React from "react";
 import {isValidUrl} from "../utils";
 import {toast} from "sonner";
-import {useMutation} from "@tanstack/react-query";
+import {useMutation, useQueryClient} from "@tanstack/react-query";
 import {updateProfile} from "../api/DevTreeAPI.ts";
+import type {User} from "../types";
 
 
 const LinkTreeView = () => {
     const [devTreeLinks, setDevTreeLinks] = useState(social)
+    const queryClient = useQueryClient();
+    const user: User = queryClient.getQueryData(['user'])!
 
     const {mutate} = useMutation({
         mutationFn: updateProfile,
@@ -43,6 +46,12 @@ const LinkTreeView = () => {
             return link
         });
         setDevTreeLinks(updatedLinks);
+        queryClient.setQueryData(['user'], (prevData: User) => {
+            return {
+                ...prevData,
+                links: JSON.stringify(updatedLinks)
+            }
+        })
     }
 
     return (
@@ -58,9 +67,11 @@ const LinkTreeView = () => {
                 ))}
                 <button
                     className="bg-blue-600 hover:bg-blue-700 text-white font-semibold
-         py-2 px-6 rounded-xl shadow-md w-full
-         transition duration-300 ease-in-out
-         transform hover:scale-105 active:scale-95">
+                                 py-2 px-6 rounded-xl shadow-md w-full
+                                 transition duration-300 ease-in-out
+                                 transform hover:scale-105 active:scale-95"
+                    onClick={() => mutate(user)}
+                >
                     Guardar
                 </button>
             </div>
