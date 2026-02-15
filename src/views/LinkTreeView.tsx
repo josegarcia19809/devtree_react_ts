@@ -73,7 +73,7 @@ const LinkTreeView = () => {
             updatedItems = [...updatedItems, newItem]
             console.log(newItem)
         } else {
-            console.log("des gha")
+            updatedItems = links.filter(link => link.name !== socialNetwork)
         }
 
         // Para almacenar en la base de datos
