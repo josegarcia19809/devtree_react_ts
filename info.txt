@@ -4,15 +4,7 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Añadiendo CSS a los Enlaces habilitados de nuestro perfil
-
-
-05:40
-
-04:15
-Live Preview de Redes Sociales Habilitadas / Deshabilitadas
-02:25
-
+DevTree React - Live Preview de Redes Sociales Habilitadas / Deshabilitadas
 
 Veamos como añadir el orden a nuestros enlaces de DevTree para añadir DragNDrop
 04:47
