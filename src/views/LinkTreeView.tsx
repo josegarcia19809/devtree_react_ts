@@ -91,7 +91,7 @@ const LinkTreeView = () => {
                         id: 0,
                         enabled: false
                     }
-                } else if (link.id > indexToUpdate) {
+                } else if (link.id > indexToUpdate && (indexToUpdate !== 0 && link.id === 1)) {
                     return {
                         ...link,
                         id: link.id - 1,
@@ -100,7 +100,6 @@ const LinkTreeView = () => {
                     return link
                 }
             })
-            console.log(indexToUpdate)
         }
 
         // Para almacenar en la base de datos
@@ -128,7 +127,7 @@ const LinkTreeView = () => {
                                  py-2 px-6 rounded-xl shadow-md w-full
                                  transition duration-300 ease-in-out
                                  transform hover:scale-105 active:scale-95"
-                    onClick={() => mutate(user)}
+                    onClick={() => mutate(queryClient.getQueryData(['user'])!)}
                 >
                     Guardar
                 </button>

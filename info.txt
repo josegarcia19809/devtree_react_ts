@@ -4,16 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Añadiendo la funcionalidad de Drop
+DevTree React - Actualizando el Orden al soltar
 
-
-02:51
-
-03:53
-
-05:36
-Actualizando el Orden al soltar
-09:30
 Creando la página para Compartir tus enlaces
 02:47
 Registrando la ruta en el backend
