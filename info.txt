@@ -4,9 +4,9 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Actualizando el Orden al soltar
+DevTree React - Creando la página para Compartir tus enlaces
 
-Creando la página para Compartir tus enlaces
+
 02:47
 Registrando la ruta en el backend
 05:37

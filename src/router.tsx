@@ -5,6 +5,7 @@ import AuthLayout from "./layouts/AuthLayout.tsx";
 import AppLayout from "./layouts/AppLayout.tsx";
 import ProfileView from "./views/ProfileView.tsx";
 import LinkTreeView from "./views/LinkTreeView.tsx";
+import HandleView from "./views/HandleView.tsx";
 
 function Router() {
     return (
@@ -17,6 +18,10 @@ function Router() {
                 <Route path="/admin" element={<AppLayout/>}>
                     <Route path="profile" element={<ProfileView/>}/>
                     <Route index={true} element={<LinkTreeView/>}/>
+                </Route>
+
+                <Route path="/:handle" element={<AuthLayout/>}>
+                    <Route element={<HandleView/>} index={true}/>
                 </Route>
             </Routes>
         </BrowserRouter>
