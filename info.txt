@@ -4,14 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Actualizando el Orden al habilitar y deshabilitar redes sociales
+DevTree React - Evitar ID's duplicados
 
-
-06:30
-
-04:09
-Evitar ID's duplicados
-07:56
 Finalizando la lógica del Orden
 07:11
 Instalando la dependencia
