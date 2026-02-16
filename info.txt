@@ -4,9 +4,9 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Drag N Drop a tus enlaces de DevTree. Instalando la dependencia
+DevTree React - Drag N Drop a tus enlaces. Añadiendo los Componentes Principales
 
-Añadiendo los Componentes Principales
+
 02:51
 Añadiendo la funcionalidad de Drag
 03:53

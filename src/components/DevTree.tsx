@@ -20,6 +20,10 @@ function DevTree({data}: DevTreeProps) {
         setEnabledLinks(JSON.parse(data.links).filter((item: SocialNetwork) => item.enabled))
     }, [data])
 
+    const handleDragEnd = () => {
+
+    }
+
     return (
         <>
             <header className="bg-slate-800 py-5">
@@ -67,15 +71,26 @@ function DevTree({data}: DevTreeProps) {
                             <p className="text-center text-lg font-black text-gray-500">
                                 {data.description}
                             </p>
-                            <div className="mt-20 flex flex-col gap-5">
-                                {enabledLinks.map((link: SocialNetwork) => (
-                                    <DevTreeLink
-                                        key={link.name}
-                                        link={link}
-                                    />
-                                ))}
 
-                            </div>
+                            <DndContext
+                                collisionDetection={closestCenter}
+                                onDragEnd={handleDragEnd}
+
+                            >
+                                <div className="mt-20 flex flex-col gap-5">
+                                    <SortableContext
+                                        items={enabledLinks}
+                                        strategy={verticalListSortingStrategy}
+                                    >
+                                        {enabledLinks.map((link: SocialNetwork) => (
+                                            <DevTreeLink
+                                                key={link.name}
+                                                link={link}
+                                            />
+                                        ))}
+                                    </SortableContext>
+                                </div>
+                            </DndContext>
                         </div>
                     </div>
                 </main>
