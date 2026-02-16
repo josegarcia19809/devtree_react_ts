@@ -1,7 +1,7 @@
 import NavigationTabs from "./NavigationTabs.tsx";
 import {Link, Outlet} from "react-router-dom";
 import {Toaster} from "sonner";
-import {DndContext, DragEndEvent, closestCenter} from "@dnd-kit/core";
+import {DndContext, type DragEndEvent, closestCenter} from "@dnd-kit/core";
 import {SortableContext, verticalListSortingStrategy, arrayMove} from "@dnd-kit/sortable";
 import type {SocialNetwork, User} from "../types";
 import {useEffect, useState} from "react";
@@ -20,8 +20,14 @@ function DevTree({data}: DevTreeProps) {
         setEnabledLinks(JSON.parse(data.links).filter((item: SocialNetwork) => item.enabled))
     }, [data])
 
-    const handleDragEnd = () => {
-
+    const handleDragEnd = (e: DragEndEvent) => {
+        const {active, over} = e
+        if (over && over.id) {
+            const prevIndex = enabledLinks.findIndex((link) => link.id === active.id)
+            const newIndex = enabledLinks.findIndex((link) => link.id === over.id)
+            const order = arrayMove(enabledLinks, prevIndex, newIndex)
+            setEnabledLinks(order)
+        }
     }
 
     return (
