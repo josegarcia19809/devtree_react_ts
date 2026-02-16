@@ -4,12 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Finalizando la lógica del Orden
+DevTree React - Drag N Drop a tus enlaces de DevTree. Instalando la dependencia
 
-
-07:11
-Instalando la dependencia
-03:20
 Añadiendo los Componentes Principales
 02:51
 Añadiendo la funcionalidad de Drag

@@ -1,6 +1,8 @@
 import NavigationTabs from "./NavigationTabs.tsx";
 import {Link, Outlet} from "react-router-dom";
 import {Toaster} from "sonner";
+import {DndContext, DragEndEvent, closestCenter} from "@dnd-kit/core";
+import {SortableContext, verticalListSortingStrategy, arrayMove} from "@dnd-kit/sortable";
 import type {SocialNetwork, User} from "../types";
 import {useEffect, useState} from "react";
 import DevTreeLink from "./DevTreeLink.tsx";
