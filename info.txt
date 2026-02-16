@@ -4,16 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Creando la página para Compartir tus enlaces
+DevTree React - Consultando el Tree con React Query
 
-
-02:47
-Registrando la ruta en el backend
-05:37
-Consultando la base de datos y mostrando la información
-03:49
-Consultando el Tree con React Query
-06:43
 Creando una página 404
 03:43
 Creando los Types para la página de Handle
