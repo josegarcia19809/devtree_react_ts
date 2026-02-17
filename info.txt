@@ -4,9 +4,9 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Consultando el Tree con React Query
+DevTree React - Creando una página 404
 
-Creando una página 404
+
 03:43
 Creando los Types para la página de Handle
 03:37
