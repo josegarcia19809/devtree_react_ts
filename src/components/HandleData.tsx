@@ -7,7 +7,9 @@ type HandleDataProps = {
 function HandleData({data}: HandleDataProps) {
     return (
         <>
-            {data.name}
+            <div className="space-y-6 text-white">
+                <p className="text-5xl text-center "> {data.handle}</p>
+            </div>
         </>
     );
 }
