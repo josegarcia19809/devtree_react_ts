@@ -4,9 +4,9 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Llenar el Handle desde el Home si está disponible
+DevTree React - Cerrando sesión del usuario
 
-Cerrando sesión del usuario
+
 Últimos ajustes
 
 
