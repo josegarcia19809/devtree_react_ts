@@ -4,11 +4,11 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Mostrando los enlaces activos del Usuario
+DevTree React - Creando la página principal y Navegaciones
 
 
 08:23
-Creando la página principal y Navegaciones
+
 06:11
 Creando un Componente re-utilizable para el Logo y Navegaciones
 05:45
