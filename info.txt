@@ -4,11 +4,11 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Generando Slug en el buscador de Handles
+DevTree React - Creando la ruta para revisar si el handle esta tomado o disponible
 
 
 02:36
-Creando la ruta para revisar si el handle esta tomado o disponible
+
 04:00
 Añadiendo funcionalidad para ir al registro
 05:25
