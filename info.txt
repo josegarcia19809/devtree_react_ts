@@ -4,11 +4,11 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Primeros pasos con la página principal
+DevTree React - Añadiendo la imagen de fondo en el inicio
 
 
 03:03
-Añadiendo la imagen de fondo en el inicio
+
 05:19
 Añadir buscador de Handles en la página principal
 03:51
