@@ -4,14 +4,8 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Creando la página principal y Navegaciones
+DevTree React - Creando un Componente re-utilizable para el Logo y Navegaciones
 
-
-08:23
-
-06:11
-Creando un Componente re-utilizable para el Logo y Navegaciones
-05:45
 Primeros pasos con la página principal
 03:03
 Añadiendo la imagen de fondo en el inicio
