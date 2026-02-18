@@ -4,10 +4,10 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Cerrando sesión del usuario
+DevTree React - Últimos ajustes
 
 
-Últimos ajustes
+
 
 
 Deployment Frontend
