@@ -4,21 +4,12 @@ Inicio: sábado 10 de enero 2026
 
 http://localhost:5173/admin/profile
 
-DevTree React - Creando la ruta para revisar si el handle esta tomado o disponible
+DevTree React - Llenar el Handle desde el Home si está disponible
 
-
-02:36
-
-04:00
-Añadiendo funcionalidad para ir al registro
-05:25
-Llenar el Handle desde el Home si está disponible
-02:49
 Cerrando sesión del usuario
-03:28
 Últimos ajustes
-04:31
+
+
 Deployment Frontend
-04:07
+
 Deployment Backend
-07:13
