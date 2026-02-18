@@ -1,6 +1,7 @@
 import {Navigate, useParams} from "react-router-dom";
 import {useQuery} from "@tanstack/react-query";
 import {getUserByHandle} from "../api/DevTreeAPI.ts";
+import HandleData from "../components/HandleData.tsx";
 
 
 function HandleView() {
@@ -18,9 +19,7 @@ function HandleView() {
     if (error) {
         return <Navigate to={'/404'}/>
     }
-    return (
-        <></>
-    );
+    if (data) return <HandleData data={data}/>;
 }
 
 export default HandleView;
