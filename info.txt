@@ -1,13 +1,12 @@
 Full Stack Node.js React TS NestJS Next.js Creando Proyectos
 
 Inicio: sábado 10 de enero 2026
+Fin: miércoles 18 de febrero 2026
+
 
 http://localhost:5173/admin/profile
 
-DevTree React - Últimos ajustes
-
-
-
+DevTree React - Fin de proyecto
 
 
 Deployment Frontend
